@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Round Robin Example</title>
-    <script src="RoundRobin.js" type="text/javascript"></script>
+    <script src="RoundRobin.min.js" type="text/javascript"></script>
 </head>
 <body>
 <label for="teams"># of teams</label>
@@ -16,8 +16,14 @@
     function doRR() {
         var teams = $('teams').value;
         var res = RoundRobin(teams);
-        $('results').innerHTML = res;
+        $('results').innerHTML='';  
+        for(i=0;i<res.length;i++)
+        {
+            $('results').innerHTML += "Round " + res[i].r + ": " + res[i].a + " vs. " + res[i].b + "<br />"; 
+
+        }
     }
-</script>
+</script>
+
 </body>
 </html>
