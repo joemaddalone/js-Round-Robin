@@ -16,7 +16,10 @@ function RoundRobin(t) {
     , r
     , pos2;
     for(x=p;x--;){a[x]=(x+1)}
-    p^t&&(a[p-1] = "_");        
+    p^t&&(a[p-1] = "_");
+    //for (i = 0; i < (p / 2) ; i++) {
+        //e.push({r:1,a:a[i],b:a[l - i]})
+    //};
     for (r = 1; r < l + 1; r++) {
         e.push({r:r,a:a[0],b:a[l - (r - 1)]});
         for (i = 2; i < (p / 2) + 1; i++) {
