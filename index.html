@@ -16,12 +16,14 @@
     function doRR() {
         var teams = $('teams').value;
         var res = RoundRobin(teams);
+        var ret = [];
         $('results').innerHTML='';  
         for(i=0;i<res.length;i++)
         {
-            $('results').innerHTML += "Round " + res[i].r + ": " + res[i].a + " vs. " + res[i].b + "<br />"; 
+            ret.push("Round " + res[i].r + ": " + res[i].a + " vs. " + res[i].b); 
 
         }
+        document.getElementById('results').innerHTML = ret.join("<br />")
     }
 </script>
 
