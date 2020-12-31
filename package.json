@@ -1,0 +1,22 @@
+{
+  "name": "robiner",
+  "version": "1.0.0",
+  "description": "Generates a round robin from a number.",
+  "main": "dist/robiner.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joemaddalone/js-Round-Robin.git"
+  },
+  "keywords": [
+    "round",
+    "robin"
+  ],
+  "author": "Joe Maddalone",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joemaddalone/js-Round-Robin/issues"
+  },
+  "homepage": "https://github.com/joemaddalone/js-Round-Robin#readme"
+}
+
+
